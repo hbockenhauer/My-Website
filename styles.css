@@ -182,9 +182,8 @@ footer {
 
 
 /* Gallery Section */
-/* Gallery Section */
 .gallery {
-    padding: 50px;
+    padding:50px;
     text-align: center;
     background-color: #f8f8f8;
 }
@@ -196,7 +195,7 @@ footer {
 
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columns, adjust as needed */
+    grid-template-columns: repeat(3, 1fr); /* 4 columns, adjust as needed */
     gap: 20px;
 }
 
