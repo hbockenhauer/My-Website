@@ -1,3 +1,5 @@
+/* Index */
+
 * {
     margin: 0;
     padding: 0;
@@ -176,4 +178,52 @@ footer {
 
 .social-links a:hover {
     color: #ff6600;
+}
+
+
+/* Gallery Section */
+/* Gallery Section */
+.gallery {
+    padding: 50px;
+    text-align: center;
+    background-color: #f8f8f8;
+}
+
+.gallery h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns, adjust as needed */
+    gap: 20px;
+}
+
+.gallery-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Ensures that any overflow is hidden */
+    text-align: center; /* Center align the text (caption) */
+    position: relative; /* Necessary for positioning the hover effect */
+}
+
+.gallery-item img {
+    width: 100%; /* Image will take up the full width of the container */
+    height: 200px; /* Fixed height for all images */
+    object-fit: cover; /* Ensures the image covers the frame without distortion */
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.2); /* Enlarge the image to 120% on hover */
+}
+
+.gallery-item figcaption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
 }
