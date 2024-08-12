@@ -238,8 +238,10 @@ footer {
 
 /* Specific styling for the quote page */
 .quote-page {
-    background: url('images/WoodTables.png') ;
-    background-size: cover; 
+    background-image: url('images/WoodTables.png'); /* Relative path to the image */
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
 }
 
 /* Quote Form Section */
@@ -247,6 +249,7 @@ footer {
     padding: 50px;
     max-width: 600px;
     margin: 0 auto;
+    margin-top: 10px;
     background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
