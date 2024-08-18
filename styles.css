@@ -385,3 +385,22 @@ main {
     font-weight: bold;
 }
 
+.coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust the height as needed */
+    background-color: #333; /* Background color for the message box */
+    border: 2px solid #000; /* Black border */
+    border-radius: 10px;
+    color: #fff; /* Text color */
+    font-size: 48px; /* Large font size */
+    font-weight: bold;
+    margin: 0 auto;
+    max-width: 600px; /* Max width of the message box */
+    padding: 20px;
+}
+
+.coming-soon p {
+    margin: 0; /* Remove default margin */
+}
