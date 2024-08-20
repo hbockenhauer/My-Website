@@ -404,3 +404,64 @@ main {
 .coming-soon p {
     margin: 0; /* Remove default margin */
 }
+
+.contact-page {
+    background-color: #f0f0f0;
+}
+
+/* Contact Page Specific Styling */
+.contact-section {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
+.contact-container {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-info {
+    flex: 1;
+}
+
+.contact-info h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.contact-info p {
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.contact-info a {
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-image {
+    flex: 1;
+}
+
+.contact-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
