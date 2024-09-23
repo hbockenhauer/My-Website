@@ -23,12 +23,23 @@
 
     <section class="gallery">
         <h2>Product Gallery</h2>
-        <div class="gallery-grid">
-            <figure class="gallery-item">
-                <img src="images/debsbureau_old.jpg" alt="debsbureau_old" class="Before">
-                <img src="images/debsbureau_new_front.jpg" alt="debsbureau_new_front" class="After">
-                <figcaption>Before and After Restored Bureau</figcaption>
-            </figure>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="css-slider">
+                        <input type="checkbox" id="slider1" class="toggle-slider" />
+                        <div class="slider-images">
+                            <img src="images/debsbureau_old.jpg" alt="Before" class="before-image">
+                            <img src="images/debsbureau_new_front.jpg" alt="After" class="after-image">
+                        </div>
+                        <!-- Navigation buttons -->
+                        <label for="slider1" class="slider-btn prev-btn">❮</label>
+                        <label for="slider1" class="slider-btn next-btn">❯</label>
+                    </div>
+                    <figcaption>Before and After Bureau</figcaption>
+                </div>
+            
+
+    
             <figure class="gallery-item">
                 <img src="images/WoodTables.png" alt="Product 2">
                 <figcaption>Bespoke Wood Log Table</figcaption>

@@ -199,7 +199,7 @@ footer {
 }
 
 .gallery h2 {
-    font-size: 36px;
+    font-size: 46px;
     margin-bottom: 30px;
 }
 
@@ -211,11 +211,11 @@ footer {
 }
 
 .gallery-item {
-    break-inside: avoid; /* Prevents the item from breaking between columns */
-    margin-bottom: 20px; /* Adds space between items */
+    break-inside: avoid; /* Prevents items from breaking inside columns */
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 5px;
-    border: 3px solid #000; /* Thin black border */
+    border: 3px solid #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     text-align: center;
@@ -227,7 +227,7 @@ footer {
     height: auto;
     object-fit: cover;
     margin-bottom: 10px;
-    border-radius: 5px 5px 0 0; /* Rounds the top corners */
+    border-radius: 5px 5px 0 0;
     transition: transform 0.3s ease;
 }
 
@@ -242,10 +242,75 @@ footer {
     font-weight: bold;
 }
 
+/* CSS Slider */
+.css-slider {
+    position: relative;
+}
 
+.slider-images {
+    position: relative;
+}
+
+.slider-images img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* By default, hide the after-image */
+.after-image {
+    display: none;
+}
+
+/* Checkbox is hidden */
+.toggle-slider {
+    display: none;
+}
+
+/* Show the before image by default */
+.before-image {
+    display: block;
+}
+
+/* When the checkbox is checked, hide the before image and show the after image */
+.toggle-slider:checked ~ .slider-images .before-image {
+    display: none;
+}
+
+.toggle-slider:checked ~ .slider-images .after-image {
+    display: block;
+}
+
+/* Navigation Buttons */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.slider-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Responsive styling for mobile */
 @media (max-width: 768px) {
     .gallery-grid {
-        grid-template-columns: 1fr; /* Single column layout on smaller screens */
+        grid-template-columns: 1fr; /* Single column on smaller screens */
     }
 }
 
