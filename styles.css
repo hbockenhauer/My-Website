@@ -316,6 +316,38 @@ footer {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
+/* General styling for multi-image slider */
+.css-slider-multi {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Hide all images by default */
+.slide-image {
+    display: none;
+}
+
+/* Show the image corresponding to each radio */
+#slider1-1:checked ~ .slider-images .slide1,
+#slider1-2:checked ~ .slider-images .slide2,
+#slider1-3:checked ~ .slider-images .slide3,
+#slider1-4:checked ~ .slider-images .slide4,
+#slider1-5:checked ~ .slider-images .slide5,
+#slider1-6:checked ~ .slider-images .slide6,
+#slider1-7:checked ~ .slider-images .slide7 {
+    display: block;
+}
+
+
+/* Hide the radio buttons */
+.css-slider-multi input[type="radio"] {
+    display: none;
+}
+
+
+
+
 /* Responsive styling for mobile */
 @media (max-width: 768px) {
     .gallery-grid {

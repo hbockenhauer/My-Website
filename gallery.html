@@ -185,21 +185,48 @@
                 <figcaption>Duck Repair</figcaption>
             </div>
 
-            
 
             <div class="gallery-item">
-                <div class="css-slider">
-                    <input type="checkbox" id="slider10" class="toggle-slider" />
+                <div class="css-slider-multi">
+                    <!-- Radio buttons for each slide -->
+                    <input type="radio" id="slider1-1" name="slider" class="slide-radio" checked>
+                    <input type="radio" id="slider1-2" name="slider" class="slide-radio">
+                    <input type="radio" id="slider1-3" name="slider" class="slide-radio">
+                    <input type="radio" id="slider1-4" name="slider" class="slide-radio">
+                    <input type="radio" id="slider1-5" name="slider" class="slide-radio">
+                    <input type="radio" id="slider1-6" name="slider" class="slide-radio">
+                    
                     <div class="slider-images">
-                        <img src="images/WIP1.jpg" alt="Before" class="before-image">
-                        <img src="images/WIP2.jpg" alt="After" class="after-image">
+                        <img src="images/WIP1.jpg" alt="Image 1" class="slide-image slide1">
+                        <img src="images/WIP2.jpg" alt="Image 2" class="slide-image slide2">
+                        <img src="images/WIP3.jpg" alt="Image 3" class="slide-image slide3">
+                        <img src="images/WIP5.jpg" alt="Image 4" class="slide-image slide4">
+                        <img src="images/WIP6.jpg" alt="Image 5" class="slide-image slide5">
+                        <img src="images/WIP7.jpg" alt="Image 6" class="slide-image slide6">
                     </div>
+            
                     <!-- Navigation buttons -->
-                    <label for="slider10" class="slider-btn prev-btn">❮</label>
-                    <label for="slider10" class="slider-btn next-btn">❯</label>
+                    <button class="slider-btn prev-btn" onclick="navigateSlider(-1)">❮</button>
+                    <button class="slider-btn next-btn" onclick="navigateSlider(1)">❯</button>
                 </div>
                 <figcaption>Currently Working on: 'Louis XV Restoration'</figcaption>
             </div>
+            
+            <script>
+                function navigateSlider(direction) {
+                    const slides = document.querySelectorAll('.css-slider-multi .slide-radio');
+                    let currentIndex = Array.from(slides).findIndex(slide => slide.checked);
+                    
+                    slides[currentIndex].checked = false;
+            
+                    // Calculate new index, wrapping around at edges
+                    let newIndex = (currentIndex + direction + slides.length) % slides.length;
+                    slides[newIndex].checked = true;
+                }
+            </script>
+            
+            
+            
 
                 
             <!-- Add more products as needed - copy the text below, paste above and change **__** to the correct file name and caption.
